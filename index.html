@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Lucas Marks</title>
+            <!-- Importa o arquivo CSS do Bootstrap versão 4.5.2 para aplicar estilos prontos de layout, botões, carrossel, etc. -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!--conectando o css do projeto-->
+<link rel="stylesheet" href="stylr.css">
+
+<!-- Importa a biblioteca jQuery (versão leve/slim), necessária para o funcionamento de componentes interativos do Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<!-- Importa o Popper.js, uma biblioteca que ajuda no posicionamento correto de elementos como menus dropdown e tooltips no Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Importa o JavaScript do Bootstrap versão 4.5.2, que ativa os componentes interativos como carrossel, modal, botão colapsável etc. -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Lucas Marques</h1>
+       <p>Olá! Sou Lucas marques, um programador iniciante, ilustrador, apaixonado por arte, historias em quadrinhos e roteirização. Com experiência em tipos de pintura, roteiros curtos e sites em HTML, busco constantemente desafios que me permitam aplicar minhas habilidades e contribuir para projetos inovadores. Meu objetivo profissional é ser backend em empresas de tecnologia, trabalhar como ilustrador e roteirista para editoras de renome.</p>
+        <input type="checkbox" id="menu"><!--cria uma caixa de seleção invisivel, que sera usada para mostrar/esconder nosso menu-->
+        <label for="menu" class="menuicone">&#9776 menu</label><!--associamos o input a label, por meio do id do input(menu), colocando-o como parametro no atributo for do comando label--><!--a label funcionara como um botaõ, quando clicamos mostrara os itens do menu, quando clicarmos novamente escondera os itens como se ativasse e desativasse o menu-->
+    <nav class="mobileMenu">
+            
+                <a href="#sobremim">Sobre mim</a><a href="#galeria">Galeria</a><a href="#habilidades">Habilidades</a><a href="#informacoesdecontato">Informação de contato</a>
+           
+    </nav>
+    <section id="sobremim">
+        <h2>Sobre mim</h2>
+        <p>Nesta seção, compartilho um pouco mais sobre minha trajetória e o que me motiva.</p>
+        <p>Este portfólio traça uma linha do tempo da minha criatividade. Das primeiras pinceladas inspiradas por artistas e quadrinistas que me inspiram até hoje, à exploração de estilos, ideias e emoções através da arte e a tecnologia que sempre me fascinou, cada trabalho conta um pouco da minha história como artista e futuro programador. Aprender a desenhar moldou minha identidade, culminando nas obras apresentadas aqui. Todas as habilidades que possuo vieram de esforço e pratica, como nunca fiz curso tive que aprender com meus erros, posso me considerar autodidata, mas sempre aprendendo cada dia mais.</p>
+        <br>
+        <hr>
+        <h3>Formação Acadêmica</h3>
+        <ul>
+            <li>Cursando o ensino médio, colégio Adventista, Paulínia -SP</li>
+            <li>2021-2022 –Microsoft Office, NEXXT treinamentos, Sumaré -SP</li>
+            <li>2022-2023- Adobe premiere, NEXXT treinamentos, Sumaré -SP</li>
+            <li>2022-2023- Canva, NEXXT treinamentos, Sumaré -SP</li>
+            <li>2023-2023- Adobe Photoshop, NEXXT treinamentos, Sumaré -SP</li>
+            <li>2023-2024- Ingles intermediário, World Opportunity, EAD</li>
+            <li>2025- Desenvolvimento em Javascript, Senai, Paulínia -SP</li>
+        </ul>
+        <h3>certificados</h3>
+        <center>
+     <!-- carrossel 4 com descrição -->
+     <div id="carrossel4-Slides" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+            <li data-target="carrossel4-Slides" data-slide-to="0" class="active"></li>
+            <li data-target="carrossel4-Slides" data-slide-to="1"></li>
+            <li data-target="carrossel4-Slides" data-slide-to="2"></li>
+            <li data-target="carrossel4-Slides" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" style="height:500px;" src="floresta.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: rgb(132, 213, 250);">Trilha no Outono</h5>
+                    <p>Caminhar entre as folhas douradas de uma floresta no Outono...</p>
+      </div>      
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" style="height:500px;" src="floresta1.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: rgb(132, 213, 250);">Ingles World Opportunity</h5>
+                    <p>nba</p>
+      </div>      
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" style="height:500px;" src="leopardo.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: rgb(132, 213, 250);">oto certification</h5>
+                    <p>num sei escreve</p>
+              </div>
+              
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" style="height:500px;" src="ursopardo.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: rgb(255, 56, 56);">Microsoft Office e outros cursos, NEXXT treinamentos</h5>
+                    <p style="color: rgb(150, 69, 69);">num sei dirigi</p>
+              </div>
+              
+            </div>
+        </div>
+            <a class="carousel-control-prev" href="#carrossel4-Slides" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <!--botão proximo -->
+            <a class="carousel-control-next" href="#carrossel4-Slides" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">proximo</span>
+            </a>
+    </div>
+    </center>
+        <h3>Habilidades Interesses</h3>
+        <ul>
+            <li>Além das minhas habilidades técnicas, sou criativo, organizado, habituo-me facilmente. Meus principais interesses incluem desenvolver programas em javascript e outras linguagens para sites e aplicativos.</li>
+        </ul>
+        <p><a href="#galeria">Ver Projetos</a> | <a href="#habilidades">Ver Habilidades</a> | <a href="#informacoesdecontato">Entrar em Contato</a></p>
+    </section>
+    </section>
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <h4>Meus projetos</h4>
+        <ol>
+            <li>Projeto</li>
+            <img src="projet1.jpg" alt="">
+            <p><b>Responsabilidades:</b> inspiração de arte nas historias de Robert Kirkman.</p>
+            <p><b>Tecnicas Utilizadas:</b> folha A4, gramatura media, grafite e tinta acrílica.</p>
+            <li>Projeto</li>
+            <img src="projeto2.jpg" alt="">
+            <p><b>Responsabilidades:</b> inspiração de arte nas historias de Robert Kirkman.</p>
+            <p><b>Tecnicas Utilizadas:</b> folha A4, gramatura media, grafite e tinta acrílica.</p>
+            <li>Projeto</li>
+            <img src="projeto3.jpg" alt="">
+            <p><b>Responsabilidades:</b> inspiração de arte nas historias de Hideaki Anno</p>
+            <p><b>Tecnicas Utilizadas:</b> folha A4, gramatura media, grafite e tinta acrílica.</p>
+            <li>Projeto</li>
+            <img src="projeto4.jpg" alt="">
+            <p><b>Responsabilidades:</b> inspiração de arte nas historias de Hideaki Anno</p>
+            <p><b>Tecnicas Utilizadas:</b> folha A4, gramatura media, grafite e tinta acrílica.</p>
+            <li>Projeto</li>
+            <img src="project5.jpg" alt="">
+            <p><b>Responsabilidades:</b> arte  de criação própria </p>
+            <p><b>Tecnicas Utilizadas:</b> folha A4, gramatura media, grafite e caneta nankin.</p>
+            <li>Projeto</li>
+            <img src="Study now.jpg" alt="">
+            <p><b>Título:</b> startup de ensino “study now” </p>
+            <p><b>Descrição:</b> startup de ensino, com foco em cursos gratuitos, instituições de ensino próximas ao usuário, vídeo aulas especializadas e testes vocacionais.</p>
+            <p><b>Responsabilidades:</b> fui o líder deste projeto e idealizador, tive a ajuda de outros colegas do colégio.</p>
+            <p><b>Tecnologias Utilizadas:</b> figma e powerpoint.</p>
+            <p><a href="#sobremim">Voltar ao Topo</a> | <a href="#habilidades">Ver Habilidades</a> | <a href="#informacoesdecontato">Entrar em Contato</a></p>
+    </section>
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul class="skill-list">
+            <li>Linguagens de Programação: HTML, CSS, Javascript.</li>
+            <li>Design Responsivo</li>
+            <li>Softwares/Ferramentas: Adobe Photoshop, Adobe premiere, Figma, Microsoft Office.</li>
+            <li>Outras Habilidades Técnicas: Marketing Digital</li>
+        </ul>
+        <h2>Habilidades Interpessoais</h2>
+        <ul class="soft-skill">
+            <li>Trabalho em equipe</li>
+            <li>Liderança</li>
+            <li>Resolução de problemas</li>
+            <li>Pensamento crítico</li>
+            <li>Adaptabilidade</li>
+            <li>Gerenciamento de tempo</li>
+        </ul>
+        <p><a href="#sobremim">Voltar ao Topo</a> | <a href="#galeria">Ver Projetos</a> | <a href="#informacoesdecontato">Entrar em Contato</a></p>
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo através dos seguintes meios:</p>
+        <ul>
+            <li>Email: <a href="lucas.marks.b@gmail.com"></a>lucas.marks.b@gmail.com</li>
+            <li>Github: <a href=""></a></li>
+        </ul>
+        <p><a href="#sobremim">Voltar ao Topo</a> | <a href="galeria">Ver Projetos</a> | <a href="#habilidades">Ver Habilidades</a></p>
+    </section>
+    </body>
+</html>
